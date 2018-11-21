@@ -1,0 +1,41 @@
+{
+  "name": "babel-plugin-syntax-monadic-comprehensions",
+  "description": "A plugin for Babel 7 that (mostly) transforms for comprehensions to flatMaps/maps.",
+  "version": "1.0.0",
+  "author": "Aitor Oses <aitor.oses@gmail.com>",
+  "main": "lib",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aitoroses/babel-plugin-syntax-monadic-comprehensions"
+  },
+  "bugs": {
+    "url": "https://github.com/aitoroses/babel-plugin-syntax-monadic-comprehensions/issues"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "es7",
+    "for",
+    "monad",
+    "comprehension",
+    "syntax",
+    "scala",
+    "haskell"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "7.1.6",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "^23.6.0",
+    "jest": "23.6.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "babel src -d lib",
+    "watch": "babel src -d lib -w",
+    "prepublish": "npm run build",
+    "test": "jest /test/"
+  }
+}
