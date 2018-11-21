@@ -91,7 +91,7 @@ export default function(babel) {
                     let yieldParam = yieldPath.node.declarations[0].init.arguments[0];
                     const newBlock = t.BlockStatement([...exprs, current].filter(Boolean));
                     const flatFn = t.ArrowFunctionExpression([t.identifier(yieldParamName)], newBlock);
-                    const flatMapExp = t.CallExpression(t.identifier(current ? "flatMap" : "map"), [yieldParam, flatFn]);
+                    const flatMapExp = t.CallExpression(t.identifier("flatMap"), [yieldParam, flatFn]);
                     const returnStatement = t.ReturnStatement(flatMapExp);
                     return recurBlock(returnStatement, yields);
                   }
