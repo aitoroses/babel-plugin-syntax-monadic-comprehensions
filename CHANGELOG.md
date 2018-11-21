@@ -1,6 +1,10 @@
 
 # Changelog
 
+## v1.1.1
+
+* Fix a bug with import declaration processing
+
 ## v1.1.0
 
 * Added a bit more safety and prevent compiling on not desired cases

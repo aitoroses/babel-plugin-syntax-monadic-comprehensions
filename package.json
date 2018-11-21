@@ -1,7 +1,7 @@
 {
   "name": "babel-plugin-syntax-monadic-comprehensions",
   "description": "A plugin for Babel 7 that (mostly) transforms for comprehensions to flatMaps/maps.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Aitor Oses <aitor.oses@gmail.com>",
   "main": "lib",
   "license": "MIT",

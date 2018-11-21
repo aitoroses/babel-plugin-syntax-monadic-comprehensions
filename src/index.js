@@ -11,8 +11,10 @@ export default function(babel) {
           let importPathLibrary = null;
           programPath.traverse({
             ImportSpecifier(specifierPath) {
-              shouldImport = true;
-              importPathLibrary = specifierPath.parent.source.value;
+              if (specifierPath.node.imported.name === 'For') {
+                shouldImport = true;
+                importPathLibrary = specifierPath.parent.source.value;
+              }
             }
           });
   
